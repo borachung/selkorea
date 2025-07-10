@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>내 마음 탐험하기! - 우리들을 위한 감정 연구소</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Gaegu:wght@400;700&family=Noto+Sans+KR:wght@400;700&display=swap');
+
+        body {
+            font-family: 'Noto Sans KR', sans-serif;
+            background-color: #eef1f5; /* 밝고 부드러운 하늘색 배경 */
+            margin: 0;
+            text-align: center;
+        }
+
+        .container {
+            width: 90%;
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        /* 헤더 */
+        header {
+            background-color: #fff;
+            padding: 20px 0;
+            border-bottom-left-radius: 20px;
+            border-bottom-right-radius: 20px;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.05);
+        }
+
+        header h1 {
+            font-family: 'Gaegu', cursive; /* 귀여운 손글씨 폰트 */
+            font-size: 3em;
+            color: #ff6b6b; /* 발랄한 포인트 색상 */
+            margin: 0;
+        }
+        
+        header h1 .icon {
+            font-style: normal;
+        }
+
+        /* 메인 콘텐츠 */
+        main {
+            padding: 40px 0;
+        }
+
+        .intro-text {
+            font-size: 1.5em;
+            color: #34495e;
+            font-weight: 700;
+            margin-bottom: 40px;
+        }
+
+        /* 탐험 스테이지(메뉴) 그리드 */
+        .stage-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 25px;
+        }
+
+        .stage-card {
+            background-color: #fff;
+            border-radius: 15px;
+            padding: 30px 20px;
+            box-shadow: 0 8px 15px rgba(0,0,0,0.08);
+            cursor: pointer;
+            transition: transform 0.3s, box-shadow 0.3s;
+            border-bottom: 5px solid #ffb142; /* 스테이지별 포인트 색상 */
+        }
+
+        .stage-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 12px 25px rgba(0,0,0,0.12);
+        }
+
+        .stage-card .emoji {
+            font-size: 4em;
+            margin-bottom: 15px;
+        }
+
+        .stage-card h2 {
+            font-size: 1.5em;
+            color: #2c3e50;
+            margin-bottom: 10px;
+        }
+
+        .stage-card p {
+            font-size: 1em;
+            color: #7f8c8d;
+            line-height: 1.5;
+        }
+
+        /* 스테이지별 포인트 색상 */
+        .stage-card.stage-2 { border-color: #55e6c1; }
+        .stage-card.stage-3 { border-color: #9b59b6; }
+        .stage-card.stage-4 { border-color: #3498db; }
+
+        /* 푸터 */
+        footer {
+            margin-top: 40px;
+            padding: 20px 0;
+            font-size: 0.9em;
+            color: #95a5a6;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1><em class="icon">🚀</em> 내 마음 탐험하기!</h1>
+    </header>
+
+    <main class="container">
+        <p class="intro-text">안녕, 탐험가! 오늘은 어떤 마음을 발견해볼까?</p>
+
+        <div class="stage-grid">
+            <div class="stage-card stage-1">
+                <div class="emoji">🤔</div>
+                <h2>내 마음은<br>어떤 모양일까?</h2>
+                <p>간단한 퀴즈로 지금 내 기분을 알아보고 감정 아바타를 만들어봐!</p>
+            </div>
+            <div class="stage-card stage-2">
+                <div class="emoji">💪</div>
+                <h2>마음 능력치<br>UP!</h2>
+                <p>친구랑 다퉜을 때, 시험 전에 불안할 때! 상황별 마음 근육을 키우자.</p>
+            </div>
+            <div class="stage-card stage-3">
+                <div class="emoji">🤫</div>
+                <h2>우리들의<br>비밀 이야기</h2>
+                <p>나만 이런 고민 하나? 친구들의 이야기에 공감하고 응원을 보내줘.</p>
+            </div>
+            <div class="stage-card stage-4">
+                <div class="emoji">💻</div>
+                <h2>디지털 세상의<br>나</h2>
+                <p>SNS, 온라인 게임! 디지털 세상에서 나를 지키고 모두를 존중하는 법!</p>
+            </div>
+        </div>
+    </main>
+
+    <footer>
+        <p>본 페이지는 모든 어린이와 청소년의 마음 건강을 응원합니다.</p>
+    </footer>
+
+</body>
+</html>
